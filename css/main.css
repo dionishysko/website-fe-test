@@ -37,6 +37,12 @@ nav {
   color: #575757;
 }
 
+@media (max-width: 768px) {
+  #nav {
+    display: block;
+  }
+}
+
 .navbar {
   background-color: #ffffff;
   color: #575757;
@@ -483,7 +489,6 @@ header .dropdown:hover .dropdown-content {
 }
 
 
-
 /*carousel*/
 .carousel {
   position: relative;
@@ -781,4 +786,11 @@ label {
 *:before,
 *:after {
   box-sizing: border-box;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+  
 }
