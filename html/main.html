@@ -4,314 +4,495 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <title>Homepage</title>
-  <link rel="stylesheet" type="text/css" href="/home/user/Downloads/dionis website/website1/css/main.css">
-
+  <link rel="stylesheet" type="text/css" href="../css/main.css">
+  <!-- <link rel="stylesheet" type="text/css" href="../css/footer1.css"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@^3.4.1/dist/css/glide.core.min.css">
   <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide@^3.4.1/dist/glide.min.js"></script>
-
-
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
   </style>
-
 </head>
 
 <body>
   <div class="wrapper">
     <div class="container">
       <header>
-        <nav>
-          <ul class="tab-nav">
-            <li class="active"><a href="#tab1">Wholesale-Pros Only</a></li>
-            <li><a href="#tab2">Retail</a></li>
-          </ul>
+        <div class="header-desktop">
+          <nav>
+            <ul class="tab-nav">
+              <li class="active"><a href="#tab1">Wholesale-Pros Only</a></li>
+              <li><a href="#tab2">Retail</a></li>
+            </ul>
+            <div class="search-container">
+              <input type="text" placeholder="Search by name, category...">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </div>
+            <ul class="tab-nav">
+              <li><a href="#">Community</a></li>
+              <div class="dropdownn">
+                <button class="dropbtnn"><i class="fa fa-user" style="padding:10px;"></i>Account<i
+                    class="fa fa-caret-down"></i></button>
+                <div class="dropdownn-content">
+                  <a href="#">Log in</a>
+                  <a href="#">Sign up</a>
+                </div>
+              </div>
+              <div class="dropdownn">
+                <button class="dropbtnn"><i class="fa fa-cart-plus" style="padding:10px;"></i>Cart<i class=" fa
+                          fa-caret-down"></i></button>
+                <div class="dropdownn-content">
+                  <a href="#">Credit Card</a>
+                  <a href="#">Paypal</a>
+                </div>
+              </div>
+            </ul>
+            <div class="tab-content" id="tab2">
+            </div>
+          </nav>
+        </div>
+        <div class="mobile-header-wrap">
+          <div class="mobile-header">
+            <div class="mobile-header__logo">
+              <a href="#"><img src="../img/nav-logo.png" alt="Logo"></a>
+            </div>
+            <div class="mobile-header__icons">
+              <a href="#"><i class="fa fa-shopping-cart"></i></a>
+              <a href="#"><i class="fa fa-user"></i></a>
+              <a href="#" class="mobile-menu-toggle"><i class="fa fa-bars"></i></a>
+            </div>
+            <nav class="mobile-menu">
+              <ul>
+                <div class="dropdown">
+                  <button class="dropbtn">BODY JEWELRY<i class="fa fa-caret-down"></i></button>
+                  <div class="dropdown-content">
+                    <div class="row">
+                      <div class="column">
+                        <div class="column1">
+                          <a href="#">Tilum Body Jewelry</a>
+                          <a href="#">Basic Piercing</a>
+                          <a href="#">Bent Barbells</a>
+                          <a href="#">Captive beadrings</a>
+                          <a href="#">Circular barbells</a>
+                          <a href="#">Labret Jewelry</a>
+                        </div>
+                        <div class="column2">
+                          <a href="#">Plugs & Ear Jewelry</a>
+                          <a href="#">Septum & Nose Jewelry</a>
+                          <a href="#">Straight Barbells STRAIGHT BARBELLS</a>
+                          <a href="#">Dermals & Parts</a>
+                          <a href="#">More Body Jewelry</a>
+                          <a href="#">Bogo Body Jewelry</a>
+                        </div>
+                        <div class="column3">
+                          <a style="color:#407EC9;" href="#">New in Body Jewelry</a>
+                          <a style="color:#407EC9" href="#">On Sale</a>
+                          <a style="color:#407EC9" href="#">View All Body Jewelry</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdown">
+                  <button class="dropbtn">PIERCING<i class="fa fa-caret-down"></i></button>
 
+                  <div class="dropdown-content">
+                    <div class="row">
+                      <div class="column">
+                        <div class="column1">
+                          <a href="#">Piercing Needles</a>
+                          <a href="#">Piercing Tools</a>
+                          <a href="#">Piercing Aftercare</a>
+                        </div>
+                        <div class="column2">
+                          <a href="#">Piercing Medical Supplies</a>
+                          <a href="#">Anodizing Machines</a>
+                          <a href="#">Suspension Hooks & Rings</a>
+                        </div>
+                        <div class="column3">
+                          <a style="color:#407EC9" href="#">New Arrival</a>
+                          <a style="color:#407EC9" href="#">On Sale</a>
+                          <a style="color:#407EC9" href="#">View All Piercing</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdown">
+                  <button class="dropbtn">TATTOO<i class="fa fa-caret-down"></i></button>
+
+                  <div class="dropdown-content">
+                    <div class="row">
+                      <div class="column">
+                        <div class="column1">
+                          <a href="#">Tattoo Needles</a>
+                          <a href="#">Tattoo Ink</a>
+                          <a href="#">Tattoo Ink Accessories</a>
+                          <a href="#">Tattoo Stenctils & Transfers</a>
+                          <a href="#">Tattoo Practice Skin</a>
+                          <a href="#">Tattoo Tubes. Tips. Grips & Covers</a>
+                          <a href="#">Tattoo Machines</a>
+                        </div>
+                        <div class="column2">
+                          <a href="#">Tattoo Machine Parts</a>
+                          <a href="#">Tattoo Power Supplies & Accessories</a>
+                          <a href="#">Tattoo Aftercare</a>
+                          <a href="#">Tattoo Medical Supplies</a>
+                          <a href="#">Tattoo Tattoo</a>
+                          <a href="#">Chevenne Tattoo</a>
+                          <a href="#">Peak</a>
+                          <a href="#">Kwadron Tattoo Supplies</a>
+                        </div>
+                        <div class="column3">
+                          <a style="color:#407EC9" href="#">New In Tattoo</a>
+                          <a style="color:#407EC9" href="#">On Sale</a>
+                          <a style="color:#407EC9" href="#">View All Tattoo Supplies</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdown">
+                  <button class="dropbtn">MEDICAL<i class="fa fa-caret-down"></i></button>
+                  <div class="dropdown-content">
+                    <div class="row">
+                      <div class="column">
+                        <div class="column1">
+                          <a style="font-weight: bold;" href="#">CLean Room</a>
+                          <a href="#">Sharp Containers</a>
+                          <a href="#">Ultrasonic Cleaners</a>
+                          <a href="#">Infections Control, Cleaners & Disifecantas</a>
+                          <a href="#">Autociave Sterilizers</a>
+                        </div>
+                        <div class="column2">
+                          <a style="font-weight: bold;" href="#">Dispoables DISPOABLES</a>
+                          <a href="#">Latex & Nittle Gloves</a>
+                          <a href="#">Tape, Gauze & Oother Dispoables</a>
+                          <a href="#">Sterilization Poucher</a>
+                          <a href="#">Scalpel Blades & Electrocautery Pens</a>
+                        </div>
+                        <div class="column3">
+                          <a style="font-weight: bold;" href="#">Personal Protective Equipment (PPE)</a>
+                          <a style="color:#407EC9" href="#">New In Arrival</a>
+                          <a style="color:#407EC9" href="#">On Sale</a>
+                          <a style="color:#407EC9" href="#">View ALl Medical Supplies</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdown">
+                  <button class="dropbtn">STUDIO<i class="fa fa-caret-down"></i></button>
+                  <div class="dropdown-content">
+                    <div class="row">
+                      <div class="column">
+                        <div class="column1">
+                          <a style="font-weight: bold;" href="#">Displays. Containers & Tools</a>
+                          <a href="#">Cases</a>
+                          <a href="#">Containers</a>
+                          <a href="#">Displays</a>
+                        </div>
+                        <div class="column2">
+                          <a style="font-weight: bold;" href="#">Studio Furniture</a>
+                          <a href="#">Studio Managment Software</a>
+                          <a href="#">Studio Software</a>
+                          <a href="#">Studio Printers, Scanners & Tablets</a>
+                        </div>
+                        <div class="column3">
+                          <a style="font-weight: bold;" href="#">Marketing</a>
+                          <a href="#">Print Shop</a>
+                        </div>
+                        <div class="column4">
+                          <a style="font-weight: bold;" href="#">Merchandise</a>
+                          <a href="#">Artwork & Art Supplies</a>
+                          <a href="#">Books & DVD</a>
+                          <a href="#">Clothing & Accessories</a>
+                        </div>
+                        <div class="column5">
+                          <a style="color:#407EC9" href="#">New In Arrival</a>
+                          <a style="color:#407EC9" href="#">On Sale</a>
+                          <a style="color:#407EC9" href="#">View All Studio</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="dropdown">
+                  <button class="dropbtn">PERMANENT MAKEUP<i class="fa fa-angle-right"></i></button>
+
+                  <div class="dropdown-content">
+                    <div class="row">
+                      <div class="column">
+                        <div class="column1">
+                          <a href="#">Permanent Makeup Needles</a>
+                          <a href="#">Permanent Makeup Machines</a>
+                          <a href="#">Permanent Makeup Pigments</a>
+                        </div>
+                        <div class="column2">
+                          <a href="#">Permanent Makeup Accessories</a>
+                          <a href="#">Microblading</a>
+                        </div>
+                        <div class="column3">
+                          <a style="color:#407EC9" href="#">New In Arrival</a>
+                          <a style="color:#407EC9" href="#">On Sale</a>
+                          <a style="color:#407EC9" href="#">View All Permanent Makeup</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </ul>
+            </nav>
+          </div>
           <div class="search-container">
             <input type="text" placeholder="Search by name, category...">
             <button type="submit"><i class="fa fa-search"></i></button>
           </div>
-
-          <ul class="tab-nav">
-            <li><a href="#">Community</a></li>
-            <div class="dropdownn">
-              <button class="dropbtnn"><i class="fa fa-user" style="padding:10px;"></i>Account<i
-                  class="fa fa-caret-down"></i></button>
-              <div class="dropdownn-content">
-                <a href="#">Log in</a>
-                <a href="#">Sign up</a>
-              </div>
-            </div>
-            <div class="dropdownn">
-              <button class="dropbtnn"><i class="fa fa-cart-plus" style="padding:10px;"></i>Cart<i class=" fa
-                  fa-caret-down"></i></button>
-              <div class="dropdownn-content">
-                <a href="#">Credit Card</a>
-                <a href="#">Paypal</a>
-              </div>
-            </div>
-          </ul>
-
-          <div class="tab-content" id="tab2">
-          </div>
-        </nav>
+        </div>
       </header>
-
       <div class="tab-content active" id="tab1">
-        <div class="navbar">
-          <div class="navbar-logo">
-            <img src="/home/user/Downloads/dionis website/website1/img/nav-logo.png" alt="painful-pleasure-logo">
-          </div>
-          <div class="dropdown">
-            <button class="dropbtn">BODY JEWELRY<i class="fa fa-caret-down"></i></button>
-            <div class="dropdown-content">
-              <div class="row">
-                <div class="column">
-                  <div class="column1">
-                    <a href="#">Tilum Body Jewelry</a>
-                    <a href="#">Basic Piercing</a>
-                    <a href="#">Bent Barbells</a>
-                    <a href="#">Captive beadrings</a>
-                    <a href="#">Circular barbells</a>
-                    <a href="#">Labret Jewelry</a>
-                  </div>
-                  <div class="column2">
-                    <a href="#">Plugs & Ear Jewelry</a>
-                    <a href="#">Septum & Nose Jewelry</a>
-                    <a href="#">Straight Barbells STRAIGHT BARBELLS</a>
-                    <a href="#">Dermals & Parts</a>
-                    <a href="#">More Body Jewelry</a>
-                    <a href="#">Bogo Body Jewelry</a>
-                  </div>
-                  <div class="column3">
-                    <a style="color:#407EC9;" href="#">New in Body Jewelry</a>
-                    <a style="color:#407EC9" href="#">On Sale</a>
-                    <a style="color:#407EC9" href="#">View All Body Jewelry</a>
+        <div class="navbar-wrap">
+          <div class="navbar navbar-wrap">
+            <div class="navbar-logo">
+              <img src="../img/nav-logo.png" alt="painful-pleasure-logo">
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">BODY JEWELRY<i class="fa fa-caret-down"></i></button>
+              <div class="dropdown-content">
+                <div class="row">
+                  <div class="column">
+                    <div class="column1">
+                      <a href="#">Tilum Body Jewelry</a>
+                      <a href="#">Basic Piercing</a>
+                      <a href="#">Bent Barbells</a>
+                      <a href="#">Captive beadrings</a>
+                      <a href="#">Circular barbells</a>
+                      <a href="#">Labret Jewelry</a>
+                    </div>
+                    <div class="column2">
+                      <a href="#">Plugs & Ear Jewelry</a>
+                      <a href="#">Septum & Nose Jewelry</a>
+                      <a href="#">Straight Barbells STRAIGHT BARBELLS</a>
+                      <a href="#">Dermals & Parts</a>
+                      <a href="#">More Body Jewelry</a>
+                      <a href="#">Bogo Body Jewelry</a>
+                    </div>
+                    <div class="column3">
+                      <a style="color:#407EC9;" href="#">New in Body Jewelry</a>
+                      <a style="color:#407EC9" href="#">On Sale</a>
+                      <a style="color:#407EC9" href="#">View All Body Jewelry</a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-
-          <div class="dropdown">
-            <button class="dropbtn">PIERCING<i class="fa fa-caret-down"></i></button>
-            <div class="dropdown-content">
-              <div class="row">
-                <div class="column">
-                  <div class="column1">
-                    <a href="#">Piercing Needles</a>
-                    <a href="#">Piercing Tools</a>
-                    <a href="#">Piercing Aftercare</a>
-                  </div>
-                  <div class="column2">
-                    <a href="#">Piercing Medical Supplies</a>
-                    <a href="#">Anodizing Machines</a>
-                    <a href="#">Suspension Hooks & Rings</a>
-                  </div>
-                  <div class="column3">
-                    <a style="color:#407EC9" href="#">New Arrival</a>
-                    <a style="color:#407EC9" href="#">On Sale</a>
-                    <a style="color:#407EC9" href="#">View All Piercing</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="dropdown">
-            <button class="dropbtn">TATTOO<i class="fa fa-caret-down"></i></button>
-            <div class="dropdown-content">
-              <div class="row">
-                <div class="column">
-                  <div class="column1">
-                    <a href="#">Tattoo Needles</a>
-                    <a href="#">Tattoo Ink</a>
-                    <a href="#">Tattoo Ink Accessories</a>
-                    <a href="#">Tattoo Stenctils & Transfers</a>
-                    <a href="#">Tattoo Practice Skin</a>
-                    <a href="#">Tattoo Tubes. Tips. Grips & Covers</a>
-                    <a href="#">Tattoo Machines</a>
-                  </div>
-                  <div class="column2">
-                    <a href="#">Tattoo Machine Parts</a>
-                    <a href="#">Tattoo Power Supplies & Accessories</a>
-                    <a href="#">Tattoo Aftercare</a>
-                    <a href="#">Tattoo Medical Supplies</a>
-                    <a href="#">Tattoo Tattoo</a>
-                    <a href="#">Chevenne Tattoo</a>
-                    <a href="#">Peak</a>
-                    <a href="#">Kwadron Tattoo Supplies</a>
-                  </div>
-                  <div class="column3">
-                    <a style="color:#407EC9" href="#">New In Tattoo</a>
-                    <a style="color:#407EC9" href="#">On Sale</a>
-                    <a style="color:#407EC9" href="#">View All Tattoo Supplies</a>
+            <div class="dropdown">
+              <button class="dropbtn">PIERCING<i class="fa fa-caret-down"></i></button>
+              <div class="dropdown-content">
+                <div class="row">
+                  <div class="column">
+                    <div class="column1">
+                      <a href="#">Piercing Needles</a>
+                      <a href="#">Piercing Tools</a>
+                      <a href="#">Piercing Aftercare</a>
+                    </div>
+                    <div class="column2">
+                      <a href="#">Piercing Medical Supplies</a>
+                      <a href="#">Anodizing Machines</a>
+                      <a href="#">Suspension Hooks & Rings</a>
+                    </div>
+                    <div class="column3">
+                      <a style="color:#407EC9" href="#">New Arrival</a>
+                      <a style="color:#407EC9" href="#">On Sale</a>
+                      <a style="color:#407EC9" href="#">View All Piercing</a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-
-          <div class="dropdown">
-            <button class="dropbtn">MEDICAL<i class="fa fa-caret-down"></i></button>
-            <div class="dropdown-content">
-              <div class="row">
-                <div class="column">
-                  <div class="column1">
-                    <a style="font-weight: bold;" href="#">CLean Room</a>
-                    <a href="#">Sharp Containers</a>
-                    <a href="#">Ultrasonic Cleaners</a>
-                    <a href="#">Infections Control, Cleaners & Disifecantas</a>
-                    <a href="#">Autociave Sterilizers</a>
-                  </div>
-                  <div class="column2">
-                    <a style="font-weight: bold;" href="#">Dispoables DISPOABLES</a>
-                    <a href="#">Latex & Nittle Gloves</a>
-                    <a href="#">Tape, Gauze & Oother Dispoables</a>
-                    <a href="#">Sterilization Poucher</a>
-                    <a href="#">Scalpel Blades & Electrocautery Pens</a>
-                  </div>
-                  <div class="column3">
-                    <a style="font-weight: bold;" href="#">Personal Protective Equipment (PPE)</a>
-                    <a style="color:#407EC9" href="#">New In Arrival</a>
-                    <a style="color:#407EC9" href="#">On Sale</a>
-                    <a style="color:#407EC9" href="#">View ALl Medical Supplies</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="dropdown">
-            <button class="dropbtn">STUDIO<i class="fa fa-caret-down"></i></button>
-            <div class="dropdown-content">
-              <div class="row">
-                <div class="column">
-                  <div class="column1">
-                    <a style="font-weight: bold;" href="#">Displays. Containers & Tools</a>
-                    <a href="#">Cases</a>
-                    <a href="#">Containers</a>
-                    <a href="#">Displays</a>
-                  </div>
-                  <div class="column2">
-                    <a style="font-weight: bold;" href="#">Studio Furniture</a>
-                    <a href="#">Studio Managment Software</a>
-                    <a href="#">Studio Software</a>
-                    <a href="#">Studio Printers, Scanners & Tablets</a>
-                  </div>
-                  <div class="column3">
-                    <a style="font-weight: bold;" href="#">Marketing</a>
-                    <a href="#">Print Shop</a>
-                  </div>
-                  <div class="column4">
-                    <a style="font-weight: bold;" href="#">Merchandise</a>
-                    <a href="#">Artwork & Art Supplies</a>
-                    <a href="#">Books & DVD</a>
-                    <a href="#">Clothing & Accessories</a>
-                  </div>
-                  <div class="column5">
-                    <a style="color:#407EC9" href="#">New In Arrival</a>
-                    <a style="color:#407EC9" href="#">On Sale</a>
-                    <a style="color:#407EC9" href="#">View All Studio</a>
+            <div class="dropdown">
+              <button class="dropbtn">TATTOO<i class="fa fa-caret-down"></i></button>
+              <div class="dropdown-content">
+                <div class="row">
+                  <div class="column">
+                    <div class="column1">
+                      <a href="#">Tattoo Needles</a>
+                      <a href="#">Tattoo Ink</a>
+                      <a href="#">Tattoo Ink Accessories</a>
+                      <a href="#">Tattoo Stenctils & Transfers</a>
+                      <a href="#">Tattoo Practice Skin</a>
+                      <a href="#">Tattoo Tubes. Tips. Grips & Covers</a>
+                      <a href="#">Tattoo Machines</a>
+                    </div>
+                    <div class="column2">
+                      <a href="#">Tattoo Machine Parts</a>
+                      <a href="#">Tattoo Power Supplies & Accessories</a>
+                      <a href="#">Tattoo Aftercare</a>
+                      <a href="#">Tattoo Medical Supplies</a>
+                      <a href="#">Tattoo Tattoo</a>
+                      <a href="#">Chevenne Tattoo</a>
+                      <a href="#">Peak</a>
+                      <a href="#">Kwadron Tattoo Supplies</a>
+                    </div>
+                    <div class="column3">
+                      <a style="color:#407EC9" href="#">New In Tattoo</a>
+                      <a style="color:#407EC9" href="#">On Sale</a>
+                      <a style="color:#407EC9" href="#">View All Tattoo Supplies</a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-
-          <div class="dropdown">
-            <button class="dropbtn">PERMANENT MAKEUP<i class="fa fa-caret-down"></i></button>
-            <div class="dropdown-content">
-              <div class="row">
-                <div class="column">
-                  <div class="column1">
-                    <a href="#">Permanent Makeup Needles</a>
-                    <a href="#">Permanent Makeup Machines</a>
-                    <a href="#">Permanent Makeup Pigments</a>
+            <div class="dropdown">
+              <button class="dropbtn">MEDICAL<i class="fa fa-caret-down"></i></button>
+              <div class="dropdown-content">
+                <div class="row">
+                  <div class="column">
+                    <div class="column1">
+                      <a style="font-weight: bold;" href="#">CLean Room</a>
+                      <a href="#">Sharp Containers</a>
+                      <a href="#">Ultrasonic Cleaners</a>
+                      <a href="#">Infections Control, Cleaners & Disifecantas</a>
+                      <a href="#">Autociave Sterilizers</a>
+                    </div>
+                    <div class="column2">
+                      <a style="font-weight: bold;" href="#">Dispoables DISPOABLES</a>
+                      <a href="#">Latex & Nittle Gloves</a>
+                      <a href="#">Tape, Gauze & Oother Dispoables</a>
+                      <a href="#">Sterilization Poucher</a>
+                      <a href="#">Scalpel Blades & Electrocautery Pens</a>
+                    </div>
+                    <div class="column3">
+                      <a style="font-weight: bold;" href="#">Personal Protective Equipment (PPE)</a>
+                      <a style="color:#407EC9" href="#">New In Arrival</a>
+                      <a style="color:#407EC9" href="#">On Sale</a>
+                      <a style="color:#407EC9" href="#">View ALl Medical Supplies</a>
+                    </div>
                   </div>
-                  <div class="column2">
-                    <a href="#">Permanent Makeup Accessories</a>
-                    <a href="#">Microblading</a>
+                </div>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">STUDIO<i class="fa fa-caret-down"></i></button>
+              <div class="dropdown-content">
+                <div class="row">
+                  <div class="column">
+                    <div class="column1">
+                      <a style="font-weight: bold;" href="#">Displays. Containers & Tools</a>
+                      <a href="#">Cases</a>
+                      <a href="#">Containers</a>
+                      <a href="#">Displays</a>
+                    </div>
+                    <div class="column2">
+                      <a style="font-weight: bold;" href="#">Studio Furniture</a>
+                      <a href="#">Studio Managment Software</a>
+                      <a href="#">Studio Software</a>
+                      <a href="#">Studio Printers, Scanners & Tablets</a>
+                    </div>
+                    <div class="column3">
+                      <a style="font-weight: bold;" href="#">Marketing</a>
+                      <a href="#">Print Shop</a>
+                    </div>
+                    <div class="column4">
+                      <a style="font-weight: bold;" href="#">Merchandise</a>
+                      <a href="#">Artwork & Art Supplies</a>
+                      <a href="#">Books & DVD</a>
+                      <a href="#">Clothing & Accessories</a>
+                    </div>
+                    <div class="column5">
+                      <a style="color:#407EC9" href="#">New In Arrival</a>
+                      <a style="color:#407EC9" href="#">On Sale</a>
+                      <a style="color:#407EC9" href="#">View All Studio</a>
+                    </div>
                   </div>
-                  <div class="column3">
-                    <a style="color:#407EC9" href="#">New In Arrival</a>
-                    <a style="color:#407EC9" href="#">On Sale</a>
-                    <a style="color:#407EC9" href="#">View All Permanent Makeup</a>
+                </div>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">PERMANENT MAKEUP<i class="fa fa-caret-down"></i></button>
+              <div class="dropdown-content">
+                <div class="row">
+                  <div class="column">
+                    <div class="column1">
+                      <a href="#">Permanent Makeup Needles</a>
+                      <a href="#">Permanent Makeup Machines</a>
+                      <a href="#">Permanent Makeup Pigments</a>
+                    </div>
+                    <div class="column2">
+                      <a href="#">Permanent Makeup Accessories</a>
+                      <a href="#">Microblading</a>
+                    </div>
+                    <div class="column3">
+                      <a style="color:#407EC9" href="#">New In Arrival</a>
+                      <a style="color:#407EC9" href="#">On Sale</a>
+                      <a style="color:#407EC9" href="#">View All Permanent Makeup</a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
         <section class="homepage-section">
           <div class="container">
             <div class="grid">
               <div class="column-1">
                 <div class="image-box">
-                  <img src="/home/user/Downloads/dionis website/website1/html/eagle.jpg" alt="eagle">
+                  <img src="../img/eagle.jpg" alt="eagle">
                   <a href="#" class="btn btn-primary">Shop Now</a>
                 </div>
               </div>
               <div class="column-2">
                 <div class="image-box">
-                  <img src="/home/user/Downloads/dionis website/website1/img/wireless.png" alt="wireless">
+                  <img src="../img/wireless.png" alt="wireless">
                   <a href="#" class="btn1 btn-primary">Shop Now</a>
                 </div>
                 <div class="image-box">
-                  <img src="/home/user/Downloads/dionis website/website1/img/ppe.png" alt="ppe">
+                  <img src="../img/ppe.png" alt="ppe">
                   <a href="#" class="btn2 btn-primary">Shop Now</a>
                 </div>
               </div>
             </div>
           </div>
         </section>
-
-
         <div class="category-cards-container">
           <div class="category-card">
             <h2>Tattoo <br> Supplies</h2>
-            <img src="/home/user/Downloads/dionis website/website1/img/tattoo-supplie.png" alt="Category 1">
+            <img src="../img/tattoo-supplie.png" alt="Category 1">
             <button>Show now</button>
           </div>
-
           <div class="category-card">
             <h2>Body <br> Jewelry</h2>
-            <img src="/home/user/Downloads/dionis website/website1/img/body-jewlery.png" alt="Category 2">
+            <img src="../img/body-jewlery.png" alt="Category 2">
             <button>Show now</button>
           </div>
-
           <div class="category-card">
             <h2>Piercing <br>Supplies</h2>
-            <img src="/home/user/Downloads/dionis website/website1/img/piercing-supplie.png" alt="Category 3">
+            <img src="../img/piercing-supplie.png" alt="Category 3">
             <button>Show now</button>
           </div>
-
           <div class="category-card">
             <h2>Medical<br> Supplies</h2>
-            <img src="/home/user/Downloads/dionis website/website1/img/medical-supplie.png" alt="Category 4">
+            <img src="../img/medical-supplie.png" alt="Category 4">
             <button>Show now</button>
           </div>
-
           <div class="category-card">
             <h2>Permanent<br> Makeup</h2>
-            <img src="/home/user/Downloads/dionis website/website1/img/permanent-makeup.png" alt="Category 5">
+            <img src="../img/permanent-makeup.png" alt="Category 5">
             <button>Show now</button>
           </div>
         </div>
-
         <div class="blog">
           <h2 class="title" style="text-align: center;">From Our Community</h2>
           <div class="section">
             <div class="content">
               <div class="image">
                 <a href="https://www.painfulpleasures.com/community/?post_type=blog&p=55983">
-                  <img class="img-responsive" src="/home/user/Documents/website-fe-test/img/tips1.jpg" width="450"
-                    height="300" alt="Top Tips for Using Threadless Body Jewelry" loading="lazy">
+                  <img class="img-responsive" src="foto1.jpg" width="450" height="300"
+                    alt="Top Tips for Using Threadless Body Jewelry" loading="lazy">
                 </a>
               </div>
               <div class="caption">
@@ -325,8 +506,8 @@
             <div class="content">
               <div class="image">
                 <a href="https://www.painfulpleasures.com/community/?post_type=blog&p=55983">
-                  <img class="img-responsive" src="/home/user/Documents/website-fe-test/img/tips.jpg" width="450"
-                    height="300" alt="Top Tips for Using Threadless Body Jewelry" loading="lazy">
+                  <img class="img-responsive" src="tips.jpg" width="450" height="300"
+                    alt="Top Tips for Using Threadless Body Jewelry" loading="lazy">
                 </a>
               </div>
               <div class="caption">
@@ -340,29 +521,24 @@
             <div class="content">
               <div class="image">
                 <a href="https://www.painfulpleasures.com/community/?post_type=blog&p=55983">
-                  <img class="img-responsive" src="/home/user/Documents/website-fe-test/img/tips2.jpg" width="450"
-                    height="300" alt="Top Tips for Using Threadless Body Jewelry" loading="lazy">
+                  <img class="img-responsive" src="foto3.jpg" width="450" height="300"
+                    alt="Top Tips for Using Threadless Body Jewelry" loading="lazy">
                 </a>
               </div>
               <div class="caption">
                 <div class="created">Mar 27, 2023</div>
                 <h2 class="title">
                   <a href="https://www.painfulpleasures.com/community/?post_type=blog&p=55978">On Hard Work and
-                    Evualtion
-                    with
-                    Tattoo Artist Autumn Hudson</a>
+                    Evualtion with Tattoo Artist Autumn Hudson</a>
                 </h2>
               </div>
             </div>
-
           </div>
           <div style="display: flex; justify-content: center;">
             <button>See all blog post</button>
           </div>
         </div>
-
         <br><br><br><br><br><br>
-
         <section>
           <div class="section-carusel">
             <div>
@@ -372,12 +548,10 @@
               <div class="glide">
                 <div class="glide__track" data-glide-el="track">
                   <ul class="glide__slides">
-
                     <div class="glide__slide">
                       <div class="carusel-container">
                         <div class="carusel-image">
-                          <img src="/home/user/Downloads/dionis website/website1/img/rook-tattoo-machine-copper.png"
-                            alt="carusel-image">
+                          <img src="../img/rook-tattoo-machine-copper.png" alt="carusel-image">
                         </div>
                         <h2 class="price">$499.99</h2>
                         <div class="caption-carusel">
@@ -385,12 +559,10 @@
                         </div>
                       </div>
                     </div>
-
                     <div class="glide__slide">
                       <div class="carusel-container">
                         <div class="carusel-image">
-                          <img src="/home/user/Downloads/dionis website/website1/img/rook-tattoo-machine-blue.png"
-                            alt="carusel-image">
+                          <img src="../img/rook-tattoo-machine-blue.png" alt="carusel-image">
                         </div>
                         <h2 class="price">$499.99</h2>
                         <div class="caption-carusel">
@@ -398,11 +570,10 @@
                         </div>
                       </div>
                     </div>
-
                     <div class="glide__slide">
                       <div class="carusel-container">
                         <div class="carusel-image">
-                          <img src="/home/user/Downloads/dionis website/website1/img/inkjekta.png" alt="carusel-image">
+                          <img src="../img/inkjekta.png" alt="carusel-image">
                         </div>
                         <h2 class="price">$1,199.99</h2>
                         <div class="caption-carusel">
@@ -410,12 +581,10 @@
                         </div>
                       </div>
                     </div>
-
                     <div class="glide__slide">
                       <div class="carusel-container">
                         <div class="carusel-image">
-                          <img src="/home/user/Downloads/dionis website/website1/img/inkjectax1.png"
-                            alt="carusel-image">
+                          <img src="../img/inkjectax1.png" alt="carusel-image">
                         </div>
                         <h2 class="price">$1,199.99</h2>
                         <div class="caption-carusel">
@@ -423,11 +592,10 @@
                         </div>
                       </div>
                     </div>
-
                     <div class="glide__slide">
                       <div class="carusel-container">
                         <div class="carusel-image">
-                          <img src="/home/user/Downloads/dionis website/website1/img/inkjecta.png" alt="carusel-image">
+                          <img src="../img/inkjecta.png" alt="carusel-image">
                         </div>
                         <h2 class="price">$1,199.99</h2>
                         <div class="caption-carusel">
@@ -437,12 +605,10 @@
                     </div>
                   </ul>
                 </div>
-
                 <div class="glide__arrows" data-glide-el="controls">
                   <button class="glide__arrow glide__arrow--left" data-glide-dir="<">&#8249;</button>
                   <button class="glide__arrow glide__arrow--right" data-glide-dir=">">&#8250;</button>
                 </div>
-
                 <div class="glide__bullets" data-glide-el="controls[nav]">
                   <button class="glide__bullet" data-glide-dir="=0"></button>
                   <button class="glide__bullet" data-glide-dir="=1"></button>
@@ -453,9 +619,7 @@
             <br>
           </div>
         </section>
-
         <br><br>
-
         <div>
           <h1 style="text-align: center; font-size: 24px; font-weight: 900;">REAL REVIEWS FROM REAL COSTUMERS</h1>
           <div class="review">
@@ -472,42 +636,14 @@
                 <p>Great healing</p>
               </div>
               <div class="content-review">
-                <img src="/home/user/Downloads/dionis website/website1/img/review.png" alt="review foto" width="85"
-                  height="85">
-                <div class="comment">
-                  <p>My first cilent come back and it almost healed within 4days. Great product. I love the way it goes
-                    on
-                    and protect the tattoo.</p>
-                </div>
-              </div>
-              <div class="link-review"><a href="#">Recovery Derm Shield --7.9" x 8 Yard Roll</a></div>
-
-            </div>
-
-            <div class="review-one">
-              <div class="stars-data">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <p>12/02/19</p>
-              </div>
-              <div class="first-comment">
-                <p>Great healing</p>
-              </div>
-              <div class="content-review">
-                <img src="/home/user/Downloads/dionis website/website1/img/review.png" alt="review foto" width="85"
-                  height="85">
+                <img src="../img/review.png" alt="review foto" width="85" height="85">
                 <div class="comment">
                   <p>My first cilent come back and it almost healed within 4days. Great product. I love the way it goes
                     on and protect the tattoo.</p>
                 </div>
               </div>
               <div class="link-review"><a href="#">Recovery Derm Shield --7.9" x 8 Yard Roll</a></div>
-
             </div>
-
             <div class="review-one">
               <div class="stars-data">
                 <span class="fa fa-star checked"></span>
@@ -521,17 +657,35 @@
                 <p>Great healing</p>
               </div>
               <div class="content-review">
-                <img src="/home/user/Downloads/dionis website/website1/img/review.png" alt="review foto" width="85"
-                  height="85">
+                <img src="../img/review.png" alt="review foto" width="85" height="85">
+                <div class="comment">
+                  <p>My first cilent come back and it almost healed within 4days. Great product. I love the way it goes
+                    on and protect the tattoo.</p>
+                </div>
+              </div>
+              <div class="link-review"><a href="#">Recovery Derm Shield --7.9" x 8 Yard Roll</a></div>
+            </div>
+            <div class="review-one">
+              <div class="stars-data">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <p>12/02/19</p>
+              </div>
+              <div class="first-comment">
+                <p>Great healing</p>
+              </div>
+              <div class="content-review">
+                <img src="../img/review.png" alt="review foto" width="85" height="85">
                 <div class="comment">
                   <p>My first cilent come back and it almost healed within 4days. Great product. I love the way it goes
                     on and protect the tattoo.</p>
                 </div>
               </div>
               <div class="link-review"><a href="#">">Recovery Derm Shield --7.9" x 8 Yard Roll</a></div>
-
             </div>
-
             <div class="review-one">
               <div class="stars-data">
                 <span class="fa fa-star checked"></span>
@@ -545,8 +699,7 @@
                 <p>Great healing</p>
               </div>
               <div class="content-review">
-                <img src="/home/user/Downloads/dionis website/website1/img/review.png" alt="review foto" width="85"
-                  height="85">
+                <img src="../img/review.png" alt="review foto" width="85" height="85">
                 <div class="comment">
                   <p>My first cilent come back and it almost healed within 4days. Great product. I love the way it goes
                     on and protect the tattoo.</p>
@@ -558,17 +711,14 @@
         </div>
       </div>
     </div>
-
     <br><br>
     <footer>
       <div class="quotes">
         <img
           src="https://www.bing.com/th?id=OIP.EVTX2PGWctV7IWrsDvLabQAAAA&w=104&h=105&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"
           alt="painful-pleasure-logo">
-        <p>The leading provider of quality jewelry, tattoo
-          and piercing supplies.</p>
+        <p>The leading provider of quality jewelry, tattoo and piercing supplies.</p>
       </div>
-
       <div class="footer-section">
         <div class="footer-column">
           <h2>Helpful Links</h2>
@@ -594,7 +744,6 @@
             <li><a href="#"><i class="fa fa-phone"> 410-712-0145 <br> (9:30am-5pm EST Mon - Fri)</i></li>
             <li><a href="#"><i class="fa fa-envelope"> support@painfulpleasures.com</i></li>
           </ul>
-
           <div class="social-media">
             <ul class="icon">
               <li class="icon"><a href="#"><i class="fa fa-facebook-official"></i></a></li>
@@ -616,7 +765,6 @@
           </div>
         </div>
     </footer>
-
     <div class="footer-container">
       <div class="footer-bottom">
         <ul id="ul-bottom">
@@ -635,7 +783,6 @@
             </select>
           </li>
         </ul>
-
         <div class="ul-bottom">
           <ul id="ul-bottom">
             <li class="li-bottom"><a href="#">Sitemap</a></li>
@@ -645,18 +792,23 @@
           <p>&copy; 2020</p>
           <p>Painful Pleasure</p>
         </div>
-
         <div>
           <img src="https://www.painfulpleasures.com/media//wysiwyg/payment-methods.png" alt="payment-methods" />
         </div>
       </div>
     </div>
-
   </div>
   </div>
-
 </body>
+<script>
+  const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+  const mobileMenu = document.querySelector('.mobile-menu');
 
+  mobileMenuToggle.addEventListener('click', () => {
+    mobileMenu.classList.toggle('mobile-menu__open');
+  });
+
+</script>
 <script>
   const tabLinks = document.querySelectorAll('.tab-nav li a');
   tabLinks.forEach(link => {
@@ -679,7 +831,6 @@
     });
   });
 </script>
-
 <script>
   var glide = new Glide('.glide', {
     type: 'carousel',
@@ -702,7 +853,6 @@
   function plusSlides(n) {
     glide.go('+' + n);
   }
-
 </script>
 
 </html>
