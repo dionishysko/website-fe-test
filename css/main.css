@@ -873,6 +873,11 @@ label {
     height: -webkit-fill-available;
   }
 
+  .mobile-menu .column{
+    flex-direction: column-reverse;
+    background-color: #fff;
+  }
+
   .mobile-menu ul {
     list-style: none;
     padding: 0;
@@ -929,7 +934,6 @@ label {
   .mobile-menu .dropdownn:hover .dropdownn-content {
     display: block;
   }
-
 
   .mobile-menu a {
     display: block;

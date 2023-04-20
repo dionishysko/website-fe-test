@@ -8,7 +8,7 @@
   <link rel="stylesheet" type="text/css" href="../css/main.css">
   <!-- <link rel="stylesheet" type="text/css" href="../css/footer1.css"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <!-- <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@^3.4.1/dist/css/glide.core.min.css">
   <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide@^3.4.1/dist/glide.min.js"></script>
   <style>
@@ -81,7 +81,7 @@
                         <div class="column2">
                           <a href="#">Plugs & Ear Jewelry</a>
                           <a href="#">Septum & Nose Jewelry</a>
-                          <a href="#">Straight Barbells STRAIGHT BARBELLS</a>
+                          <a href="#">Straight Barbells</a>
                           <a href="#">Dermals & Parts</a>
                           <a href="#">More Body Jewelry</a>
                           <a href="#">Bogo Body Jewelry</a>
@@ -853,6 +853,19 @@
   function plusSlides(n) {
     glide.go('+' + n);
   }
+</script>
+
+<script>
+  const menuItems = document.querySelectorAll('.navbar-wrap .navbar navbar-wrap');
+  menuItems.forEach((menuItem) => {
+    const dropdownMenu = menuItem.querySelector('.dropwdown');
+    if (dropdownMenu) {
+      menuItem.addEventListener('click', (event) => {
+        event.preventDefault();
+        dropdownMenu.classList.toggle('show');
+      });
+    }
+  });
 </script>
 
 </html>
